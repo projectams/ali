@@ -44,7 +44,7 @@
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }	
-	var qModel = 'models/new 2';
+	var qModel = 'new 2';
 	if(getParameterByName('model'))
 	{
 		qModel = getParameterByName('model');
@@ -92,7 +92,7 @@
       window.addEventListener('resize', onWindowResize, false);
 
       var loader = new THREE.JDLoader();
-      loader.load( qModel + '.JD',
+      loader.load('models/'+qModel + '.JD',
       function (data)
       {
 
